@@ -72,41 +72,7 @@ def recommend():
 
 def main():
     recommend()
-'''def main():
-    # Create the Tkinter window
-    window = tk.Tk()
-    window.title("Movie Recommendation System")
 
-    # Increase the window size
-    window.geometry("1200x400")
-
-    # Add widgets to the window
-    instruction_label = tk.Label(window, text="Speak to search for movies:")
-    instruction_label.pack()
-
-       # Create input entry widget
-    input_entry = tk.Entry(window, width=10)
-    input_entry.pack()
-
-    # Function to call recommend and display results
-    def search_movies():
-                # Get the input from the user
-        x = input_entry.get()
-        if x.isdigit():
-            # Call the recommend function
-            recommended_movies = recommend(int(x))
-
-            # Display the top 5 movie recommendations on the screen
-            result_label.configure(text="Recommended Movies:\n" + "\n".join(recommended_movies))
-
-    search_button = tk.Button(window, text="Search", command=search_movies)
-    search_button.pack()
-
-    result_label = tk.Label(window, text="")
-    result_label.pack()
-
-    # Start the Tkinter event loop
-    window.mainloop()'''
 
 if __name__ == "__main__":
     main()
